@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    float numero, soma = 0, media;
+    int i;
+
+    printf("Digite 10 números:\n");
+     
+     //O for é usado para loop dos 10 valores
+    for(i = 1; i <= 10; i++) {
+        printf("Número %d: ", i);
+        scanf("%f", &numero);
+        soma += numero;
+    }
+    //Calculo de média dos 10 valores
+    media = soma / 10;
+     
+    printf("A média dos 10 números é: %.2f\n", media);
+
+    return 0;
+}
