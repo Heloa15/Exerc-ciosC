@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+   
+  float nota1, nota2, media;
+  
+  //Solicita as notas ao usuário
+  printf("Digite a primeira nota:");
+  scanf("%f", &nota1);
+  printf("Digite a segunda nota:");
+  scanf("%f", &nota2);
+
+  //Calcula a média entre as notas
+  media = (nota1 + nota2) / 2;
+  
+  //Verifica se o aluno(a) foi aprovado 
+  if (media >= 7) {
+      printf("Aluno(a) aprovado(a)! Média: %.2f\n", media);
+  } else {
+      printf("Aluno(a) reprovado(a)! Média: %.2f\n", media);
+  }
+  
+    return 0;
+}
